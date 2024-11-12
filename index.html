@@ -11,90 +11,95 @@
 </head>
 
 <body>
-    <div class="big_content p-10 h-[100%]">
+    <div class="big_content p-10 space-y-6 "> <!--md:w-[848px]-->
         <div class="flex w-[100%] justify-between items-center">
             <h1 class="font-bold text-4xl">Cheif LA</h1>
             <nav class="absolute translate-x-[60%]">
-                <ul class="flex justify-center gap-[45px] font-bold">
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">About Us</a></li>
-                    <li><a href="#">Services</a></li>
-                    <li><a href="#">Contact Us</a></li>
+                <ul class="flex justify-center gap-[45px] font-bold"> <!--md:gap-[0]-->
+                    <li class="hover:shadow-xl hover:rounded-2xl"><a href="#">Home</a></li>
+                    <li class="hover:shadow-xl hover:rounded-2xl"><a href="#">About Us</a></li>
+                    <li class="hover:shadow-xl hover:rounded-2xl"><a href="#">Services</a></li>
+                    <li class="hover:shadow-xl hover:rounded-2xl"><a href="#">Contact Us</a></li>
                 </ul>
             </nav> <!--End nav-->
-            <div class="flex items-center gap-6">
-                <img src="./Img/Frame 17.png" alt="notifications" />
+            <div class="flex items-center gap-6"> <!--md:gap-[5px]-->
+                <img class="cursor-pointer" src="./Img/Frame 17.png" alt="notifications" />
                 <img src="./Img/Ellipse 1.png" alt="avt" />
                 <h1 class="text-2xl text-[#7200B8] font-bold">Kunle Ajayi</h1>
             </div>
 
         </div> <!--End navbar-->
 
-        <div class="content flex h-[700px]">
-            <div class="menu_dashboard mt-6 w-2/12 font-bold h-[75%] bg-black rounded-xl text-white">
-                <div class="mt-10 pr-5 pl-5">
-                    <div class="menu_dashboard_icon bg-[#A717FE] rounded-lg items-center">
+        
+        <div class="content flex">
+            <div class="menu_dashboard p-6 font-bolds bg-black rounded-lg text-white"> <!--md:block lg:w-1/5-->
+                <div class="mt-10 space-y-4">
+                    <div class="block menu_dashboard_icon bg-[#A717FE] rounded-lg items-center">
                         <i class="fa-solid fa-house"></i>
-                        <p>Dashboard</p>
+                        <a>Dashboard</a>
                     </div>
                     <div class="menu_dashboard_icon items-center">
                         <i class="fa-solid fa-wallet"></i>
-                        <p>Transaction</p>
+                        <a>Transaction</a>
                     </div>
                     <div class="menu_dashboard_icon items-center">
                         <i class="fa-solid fa-bell"></i>
-                        <p>Notifications</p>
+                        <a>Notifications</a>
                     </div>
                     <div class="menu_dashboard_icon items-center">
                         <i class="fa-solid fa-comment"></i>
-                        <p>Support</p>
+                        <a>Support</a>
                     </div>
                     <div class="menu_dashboard_icon items-center">
                         <i class="fa-solid fa-gear"></i>
-                        <p>Settings</p>
+                        <a>Settings</a>
                     </div>
                 </div>
-                <div class="mt-20 pr-5 pl-5">
+                <div class="mt-20">
                     <div class="menu_dashboard_icon items-center">
                         <i class="fa-solid fa-right-to-bracket"></i>
-                        <p>Log Out</p>
+                        <a>Log Out</a>
                     </div>
                 </div>
             </div> <!--End menu_dashboard-->
 
-            <div class="dashboard w-2/3 ml-10 mt-5">
-                <div class="flex justify-between">
-                    <h2 class="font-bold">Dashboard</h2>
-                    <p>Reviews & Feedback</p>
-                </div> <!--End content top-->
-                <div>
-                    <div>
-                        <p>Loans Available</p>
-                    </div>
-                    <div>
-                        <p>Repayment Options</p>
-                    </div>
-                    <div>
-                        <p>Loans Available</p>
-                    </div>
+            <div class="dashboard px-5 mx-auto space-y-6"> <!-- md:w-3/4 md:space-y-4-->
+                <div class="flex justify-between items-center">
+                    <h2 class="font-bold text-2xl">Dashboard</h2>
+                    <button
+                        class="px-4 py-2 bg-gray-200 border-none rounded-lg font-semibold text-md">Reviews &
+                        Feedback</button>
+                </div>
+                <!--End content top-->
+                <div class="flex space-x-4 gap-6"> <!-- md:flex-col md:space-x-0 md:gap-1-->
+                    <button class="w-[25%] bg-black text-white font-semibold py-4 px-6 rounded-lg">Loans Available</button> <!-- md:w-full-->
+                    <button class="w-[25%] bg-black text-white font-semibold py-4 px-6 rounded-lg">Repayment Options</button> <!-- md:w-full-->
+                    <button class="w-[25%] bg-black text-white font-semibold py-4 px-6 rounded-lg">Percentage Calculator</button> <!-- md:w-full-->
                 </div> <!--End content middle-->
-                <div>
-                    <div>
-                        <h1>Request Loan</h1>
+                <div class="flex space-x-6 justify-between"> <!-- md:flex-col-->
+                    <div class="w-2/3 py-8"> <!-- md:flex-col  md:w-full-->
+                        <div class="flex space-x-6"> <!-- md:space-x-1-->
+                            <button class="px-10 text-center font-bold text-white bg-black text-4xl rounded-lg flex-1">REQUEST LOAN</button> <!-- md:text-2xl md:px-2-->
+                            <button class="px-10 text-center font-bold text-white bg-black text-4xl rounded-lg flex-1">CHOOSE A REPAYMENT PLAN</button> <!-- md:px-8 md:text-2xl-->
+                        </div>
+                        <button class="loan_app bg-black text-white font-semibold py-4 px-6 rounded-lg w-1/3 h-20 text-center absolute bottom-0 translate-x-1/3">Loan application status</button> <!-- md:static md:translate-x-0 md:translate-y-1 md:w-full md:text-2xl-->
                     </div>
-                    <div>
-                        <h1>Request Loan</h1>
-                    </div>
-                    <div>
-                        <h1>Request Loan</h1>
-                        <div class="chat_now">
-
+                    <div class="latest_update w-1/4 space-y-4 p-6 bg-black text-white rounded-lg relative"> <!-- md:w-full md:left-[-25px] md:bottom-[-20px]-->
+                        <h1 class="text-lg text-center font-semibold">Latest Update</h1>
+                        <p class="text-md">Lorem ipsum dolor sit amet consectetur. Iaculis diam pretium sem
+                            porttitor nibh.</p>
+                        <p class="text-md">Lorem ipsum dolor sit amet consectetur. Iaculis diam pretium sem porttitor
+                            nibh.</p>
+                        <p class="text-md">Lorem ipsum dolor sit amet consectetur. Iaculis diam pretium sem porttitor
+                            nibh.</p>
+                        <p class="text-md">Lorem ipsum dolor sit amet consectetur. Iaculis diam pretium sem porttitor
+                            nibh.</p>
+                        <div class="font-bold text-xl text-[#7200B880] w-1/2 absolute bottom-[-80px] right-[-40px]">
+                            <h1>Chat Now</h1>
+                            <img class="ml-5 cursor-pointer" src="./Img/comment-dots.png" alt="chatbox"/>
                         </div> <!--End chat_now-->
                     </div>
                 </div> <!--End content middle 2-->
-                <div>
-                    <p>Loan application status</p>
-                </div> <!--End content bottom-->
             </div> <!--End dashboard-->
         </div> <!--End content-->
     </div> <!--End big_content-->
